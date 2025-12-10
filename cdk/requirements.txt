@@ -1,7 +1,5 @@
-#!/usr/bin/env python3
-import aws_cdk as cdk
-from cdk_stack import SecureServerlessStack
-
-app = cdk.App()
-SecureServerlessStack(app, "SecureServerlessStack")
-app.synth()
+aws-cdk-lib==2.157.0
+constructs>=10.0.0,<11.0.0
+boto3
+bandit
+trufflehog
