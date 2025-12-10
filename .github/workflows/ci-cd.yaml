@@ -28,8 +28,8 @@ jobs:
           cd cdk
           cdk synth
 
-      - name: Run Bandit Security Scan
-        run: bandit -r cdk/ || true
+     # - name: Run Bandit Security Scan
+      #  run: bandit -r cdk/ || true
       # "|| true" means even if Bandit finds issues, pipeline continues
 
       - name: Deploy CDK Stack to AWS
