@@ -10,9 +10,9 @@ class LambdaStack(Stack):
 
         _lambda.Function(
             self, "DemoLambda",
-            runtime=_lambda.Runtime.PYTHON_3_9,
+            runtime=_lambda.Runtime.PYTHON_3_12,
             handler="index.handler",  # 👈 index.py + handler()
-            code=_lambda.Code.from_asset("lambda")
+            code=_lambda.Code.from_asset("lambda_function")
         )
 
 app = App()
